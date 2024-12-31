@@ -1,0 +1,23 @@
+h1, h2, p, .main {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+body {
+    background-color: #ffb3de;
+}
+
+.sidenav a {
+    background-color: #c90068;
+    font-size: 36;
+    font-family: Arial;
+}
+
+.large-button {
+    width: 300px;
+    height: 90px;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #0e8f1b;
+}

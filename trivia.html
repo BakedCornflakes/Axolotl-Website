@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- include css file -->
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia</title>
+        <script>
+            // check for all correct answers
+            document.addEventListener('DOMContentLoaded', function() {
+                let corrects = document.querySelectorAll('.correct');
+            for (let i = 0; i < corrects.length; i++) {
+                corrects[i].addEventListener('click', function() {
+                    corrects[i].style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'correct';
+                });
+            }
+            // check for all incorrect answers
+            let incorrects = document.querySelectorAll('.incorrect');
+            for (let i = 0; i < incorrects.length; i++) {
+                incorrects[i].addEventListener('click', function() {
+                    incorrects[i].style.backgroundColor = 'red';
+                    document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                });
+            }
+
+
+        });
+        </script>
+    </head>
+    <body>
+        <!-- include navigation bar -->
+        <div class = "sidenav">
+            <a href="donate.html">Donate</a>
+            <a href="aquarium.html">Aquarium</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- include page content -->
+        <div class = "main">
+        <h1>Trivia Section</h1>
+        <h2>Test your Axolotl knowledge with some Trivia problems!</h2>
+        </div>
+    </div>
+    <!-- include questions-->
+    <div class="container">
+        <div class="section">
+            <!-- question 1 -->
+            <h2>Question 1</h2>
+            <hr>
+            <h3>What is the Axolotl's Scientific Name?</h3>
+            <button class="incorrect">Mexicanus Salamandus</button>
+            <button class="correct">Ambystoma Mexicanum</button>
+            <button class="incorrect">Water Lizard</button>
+            <button class="incorrect">Axolotus</button>
+            <p id="feedback1"></p>
+            <!-- question 2 -->
+            <h2>Question 2</h2>
+            <hr>
+            <h3>What is the Axolotl's current status?</h3>
+            <button class="incorrect">Extinct</button>
+            <button class="incorrect">Vulnerable</button>
+            <button class="incorrect">Least Concern</button>
+            <button class="correct">Critically Endangered</button>
+            <p id="feedback1"></p>
+            <!-- question 3 -->
+            <h2>Question 3</h2>
+            <hr>
+            <h3>Where does the Axolotl Live?</h3>
+            <button class="correct">Mexico</button>
+            <button class="incorrect">Albania</button>
+            <button class="incorrect">Brazil</button>
+            <button class="incorrect">Ivory Coast</button>
+            <p id="feedback1"></p>
+            <!-- question 4 -->
+            <h2>Question 4</h2>
+            <hr>
+            <h3>Which is not a possible Axolotl color?</h3>
+            <button class="incorrect">Blue</button>
+            <button class="incorrect">Pink</button>
+            <button class="incorrect">Black</button>
+            <button class="correct">None of the above</button>
+            <p id="feedback1"></p>
+            <!-- question 5 -->
+            <h2>Question 5</h2>
+            <hr>
+            <h3>Which popular game features the Axolotl?</h3>
+            <button class="incorrect">DOOM</button>
+            <button class="incorrect">Tetris</button>
+            <button class="correct">Minecraft</button>
+            <button class="incorrect">League of Legends</button>
+            <p id="feedback1"></p>
+        </div>
+
+    </div>
+    </body>
+
+</html>
